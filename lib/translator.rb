@@ -41,7 +41,7 @@ def get_english_meaning(path, emoticon)
     end
   end
   e = emotes.flatten
-  e.delete(:english)
+  e.delete(:japanese)
   hash = Hash[*e]
   english = hash.invert
   eng = english[emoticon]
