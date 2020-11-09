@@ -9,6 +9,7 @@ def load_library(path)
   emoticons.each do |word, set|
     emoticons[word] = {:english => set.first, :japanese => set.last}
   end
+  binding.pry 
 end
 
 # def get_japanese_emoticon(path, emoticon)
@@ -31,7 +32,7 @@ end
 # def get_english_meaning(path, emoticon)
 #   emoticon_hash = load_library(path)
 #   invert = emotion_hash.invert 
-#   binding.pry 
+
 # end 
 
 
