@@ -34,12 +34,7 @@ def get_english_meaning(path, emoticon)
   english = []
   invert.each do |emos, eng|
     english << eng 
-    emos.each do |k ,v|
-      v.each do |items|
-        english << items.first
-      end  
-    end    
-  end   
+  end    
   binding.pry
 end 
 
