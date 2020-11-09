@@ -17,7 +17,8 @@ def get_japanese_emoticon(path, emoticon)
   emoticon_hash.each do |word, symbols|
    symbols.each do |k, v|
      empty << v  
-   end 
+   end
+  empty 
   end 
   binding.pry 
 end
