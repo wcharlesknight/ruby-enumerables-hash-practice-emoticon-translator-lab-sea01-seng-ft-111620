@@ -18,7 +18,8 @@ def get_japanese_emoticon(path, emoticon)
     language.each do |lang, emoticon|
      empty << emoticon 
     end
-  end   
+  end
+  hash = Hash[*empty]
 binding.pry 
 end
 
