@@ -31,7 +31,6 @@ end
 def get_english_meaning(path, emoticon)
   emoticon_hash = load_library(path)
   invert = emoticon_hash.invert 
-  english = []
   emotes = []
   invert.each do |emos, eng|
     emotes << eng
