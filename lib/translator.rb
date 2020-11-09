@@ -17,10 +17,9 @@ def get_japanese_emoticon(path, emoticon)
   emoticon_hash.each do |word, symbols|
    symbols.each do |k, v|
      empty << v  
-   end
-  end
   empty.each_slice(2).map do |a,b|
-    [a.to_sym, b].to_h
+    [a.to_sym, b].to_h 
+   end
   end
   binding.pry 
 end
