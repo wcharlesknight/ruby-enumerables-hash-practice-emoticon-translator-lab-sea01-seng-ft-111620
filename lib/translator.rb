@@ -39,7 +39,8 @@ def get_english_meaning(path, emoticon)
         emotes << object
       end 
     end 
-  end    
+  end
+  emotes
   binding.pry
 end 
 
