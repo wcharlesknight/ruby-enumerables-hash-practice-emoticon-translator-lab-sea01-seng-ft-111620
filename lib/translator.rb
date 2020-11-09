@@ -44,6 +44,11 @@ def get_english_meaning(path, emoticon)
   e.delete(:english)
   hash = Hash[*e]
   english = hash.invert
+  eng = english[emoticon]
+  if eng == nil
+    eng = "Sorry, that emoticon was not found" 
+  end
+eng 
 binding.pry
 end 
 
