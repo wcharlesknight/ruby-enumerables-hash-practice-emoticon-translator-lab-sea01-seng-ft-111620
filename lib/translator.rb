@@ -9,7 +9,6 @@ def load_library(path)
   emoticons.each do |word, set|
     emoticons[word] = {:english => set.first, :japanese => set.last}
   end
-  binding.pry 
 end
 
 def get_japanese_emoticon(path, emoticon)
