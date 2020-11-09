@@ -35,7 +35,7 @@ def get_english_meaning(path, emoticon)
   invert.each do |emos, eng|
     emotes << eng
     emos.each_with_index do |object, index| 
-      if index.even?
+      if index.odd?
         emotes << object
       end 
     end
