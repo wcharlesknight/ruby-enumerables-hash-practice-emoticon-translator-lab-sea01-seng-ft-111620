@@ -31,7 +31,7 @@ end
 def get_english_meaning(path, emoticon)
   emoticon_hash = load_library(path)
   invert = emoticon_hash.invert 
-  emotes = [].flatten.delete(:japanese)
+  emotes = []
   invert.each do |emos, eng|
     emotes << eng
     emos.each_with_index do |object, index| 
@@ -40,9 +40,8 @@ def get_english_meaning(path, emoticon)
       end 
     end
   end
-  #e = emotes.flatten
-  #e.delete(:japanese)
-  hash = Hash[*emotes]
+  e = emotes.flatten.delete(:japanese)
+  hash = Hash[*e]
   english = hash.invert
   eng = english[emoticon]
   if eng == nil
