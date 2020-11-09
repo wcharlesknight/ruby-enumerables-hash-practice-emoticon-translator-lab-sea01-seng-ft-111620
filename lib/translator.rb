@@ -20,7 +20,7 @@ def get_japanese_emoticon(path, emoticon)
     end
   end
   hash = Hash[*empty]
-binding.pry 
+  hash[emoticon] 
 end
 
 
