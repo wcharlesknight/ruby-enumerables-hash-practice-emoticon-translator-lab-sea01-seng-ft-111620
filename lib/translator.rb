@@ -40,7 +40,7 @@ def get_english_meaning(path, emoticon)
       end 
     end
   end
-  englishg = emotes.flatten.delete(:english) 
+  e = emotes.flatten
 binding.pry
 end 
 
