@@ -38,7 +38,8 @@ def get_english_meaning(path, emoticon)
       if index.even?
         emotes << object
       end 
-    end 
+    end
+  english = emotes.flatten.delete(:english)  
   end
   binding.pry
 end 
