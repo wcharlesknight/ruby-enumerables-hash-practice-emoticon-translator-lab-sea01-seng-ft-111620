@@ -32,7 +32,7 @@ end
 def get_english_meaning(path, emoticon)
   emoticon_hash = load_library(path)
   invert = emotion_hash.invert 
-
+  binding.pry
 end 
 
 
