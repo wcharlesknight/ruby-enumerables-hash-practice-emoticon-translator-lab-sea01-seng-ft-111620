@@ -20,7 +20,10 @@ def get_japanese_emoticon(path, emoticon)
     end
   end
   hash = Hash[*empty]
-  hash[emoticon] 
+  emote = hash[emoticon]
+  if emote == nil
+    result = "Sorry, that emoticon was not found" 
+  end 
 end
 
 
